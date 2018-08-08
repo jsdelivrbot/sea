@@ -21,15 +21,16 @@ p {
 }
 
 .parallax-container {
-  padding: 150px;
-  min-height: 600px;
+ 
+  min-height: 520px;
   line-height: 0;
-  height: auto;
+  height:auto;
   color: rgba(255,255,255,.9);
   
 }
 
 .parallax-container .section {
+  
     width: 100%;
   }
   
