@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Seagle Design</title>
+
+<!-- CSS  -->
+ 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+   
+<!--/CSS  -->
+  
+
+
+  
+</head>
+
+<body>
+
+<!--CARGA DE SCRIPTS-->
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/slideanim.js"></script> <!--Efecto que hace aparecer el texto-->
+<script src="js/loadefecct.js"></script><!--Efecto al entrar a la web-->
+<script src="js/irarriba.js"></script><!--Boton que lleva arriba-->
+<script src="js/opennav.js"></script><!--Menu a pantalla completa-->
+
+<!--FIN CARGA SCRIPTS-->
+
+
+<div class="loader-page"></div><!--LLAMA AL EFECTO CARGANDO PAG-->
+ 
+ 
+
+ <div class="navbar-fixed">
+<nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo" ><span class="light-blue-text text-lighten-2" >SEAGLE</span></a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+        
+        <a class="btn-floating cyan  pulse" onclick="openNav()"><i class="material-icons">menu</i></a>
+        
+      
+        
+        </li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">NOSOTROS</a></li>
+        <li><a href="#">SERVICIOS</a></li>
+        <li><a href="contactanos.html">CONTACTO</a></li>
+        
+      </ul>
+      
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  
+  
+ <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+      <a href="#">NOSOTROS</a>
+      <a href="#">SERVICIOS</a>
+      <a href="contactanos.html">CONTACTO</a>
+      
+  </div>
+</div> 
+</div>
+
+<!--  FIN DEL MENU -->
+
+<!-- INICO CONTENEDOR-->
+
+<div id="index-banner" class="parallax-container"style="min-height:200px">
+    <div class="section no-pad-bot">
+      <div class="container">
+          <h1 class="header center white-text text-lighten-2">CONTACTANOS</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Serivicios Informaticos</h5>
+        </div>
+        
+      </div>
+    </div>
+    <div class="parallax "><img src="imagenes/contacto.jpg" alt="Unsplashed background img 2">
+    </div>
+</div>
+  
+  
+
+<section class="container">
+		<div class="row">
+        <h4 class="light-blue-text text-lighten-2">CONTACTO</h4>
+        <h6>Dejenos su mensaje. Se lo responderemos a la brevedad.</h6>
+
+            <br>
+        Si queres que nuestro equipo se ponga en contacto con usted, indique su numero y horario en el que esté disponible.</h1>
+        <br><br><br>  
+        <article class="col s6 offset-s3">
+				<form method="POST" action="formulario-contacto.php">
+					<div class="input-field">
+						<i class="material-icons prefix">perm_identity</i>
+						<label for="nombre">Nombre</label>
+						<input type="text" name="nombre" required>
+					</div>
+
+					<div class="input-field">
+						<i class="material-icons prefix">person_pin</i>
+						<label for="apellido">Apellido</label>
+						<input type="text" name="apellido" required>
+					</div>
+					
+					<div class="input-field">
+						<i class="material-icons prefix">email</i>
+						<label for="email">Email</label>
+						<input type="email" name="email" required>
+					</div>
+
+					<div class="input-field">
+						<i class="material-icons prefix">mode_edit</i>
+						<label for="mensaje">Mensaje</label>
+						<textarea name="mensaje" id="" rows="10" class="materialize-textarea"  length="140" required></textarea>
+					</div>
+					
+					<p class="right-align">
+						<button class="waves-effect waves-light btn" type="submit"><i class="material-icons right">send</i>enviar</button>
+					</p>
+
+				</form>
+
+			</article>
+		</div>
+	</section>
+
+
+
+
+<footer class="page-footer grey darken-4" >
+    <div class="footer-copyright">
+      <div class="container" align="center">
+        © 2018 <> with <i class="small material-icons red-text text-red">favorite</i> by <em><strong>Seagle Desing</strong></em></a>
+      </div>
+    </div>
+  </footer>
+  
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+   <!-- /Scripts-->
+   
+
+
+<!-- boton arriba-->
+<span class="ir-arriba " title="Arriba"><i class="material-icons">arrow_drop_up</i></span></span>
+
+</body>
+</html>
