@@ -45,5 +45,17 @@
     transition: box-shadow 0.5s;
 }
 .panel:hover {
-    box-shadow: 5px 0px 40px rgba(68, 0, 255, 0.836);
+    box-shadow: 5px 0px 40px rgba(92, 212, 248, 0.836);
 }
+
+.showHide { display:none; }
+
+/* Desktop*/
+@media screen and (min-width: 768px) {
+  .showHide  { display: block; }
+  #leftside > button { display: none; }
+}
+
+
+  
+  
