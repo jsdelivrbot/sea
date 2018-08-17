@@ -11,114 +11,70 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/seagle.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
   <!--/CSS  -->
-
-
-
-
+  
 </head>
 
 <body>
-
   <!--CARGA DE SCRIPTS-->
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="js/slideanim.js"></script>
-  <!--Efecto que hace aparecer el texto-->
-  <script src="js/loadefecct.js"></script>
-  <!--Efecto al entrar a la web-->
-  <script src="js/irarriba.js"></script>
-  <!--Boton que lleva arriba-->
-  <script src="js/opennav.js"></script>
-  <!--Menu a pantalla completa-->
-
-
-
-
-
-
-
-
-
-
-
+  <script src="js/slideanim.js"></script>  <!--Efecto que hace aparecer el texto-->
+  <script src="js/loadefecct.js"></script>  <!--Efecto al entrar a la web-->
+  <script src="js/irarriba.js"></script>  <!--Boton que lleva arriba-->
+  <script src="js/opennav.js"></script>  <!--Menu a pantalla completa-->
+  <script src="js/mousehover.js"></script><!--Efecto hover al logo-->
+  <script src="js/slider.js"></script> <!--Slider-->
   <!--FIN CARGA SCRIPTS-->
+  <div class="loader-page"></div>
+ 
 
-
-  <ul id="slide-out" class="sidenav">
-      <li><div class="user-view">
-        <div class="background">
-          <img src="images/office.jpg">
-        </div>
-        <a href="#user"><img class="circle" src="images/1.jpg"></a>
-        <a href="#name"><span class="white-text name">John Doe</span></a>
-        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-      </div></li>
-      <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-      <li><a href="#!">Second Link</a></li>
-      <li><div class="divider"></div></li>
-      <li><a class="subheader">Subheader</a></li>
-      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li></ul>
-
-  <div class="navbar-fixed">
-    <nav class="blue" role="navigation">
-        <ul class="right hide-on-med-and-down">
-
-            
-
-         <li><a  href="#" id="SideNav" class="nav-header btn-floating cyan pulse">
+<!--NAV BAR SECTION-->
+<div class="navbar-fixed">
+    <nav class="white" role="navigation">
+        <ul class="right hide-on-med-and-down">    
+         <li>
+           <a  href="#" id="SideNav" class="nav-header btn-floating cyan pulse">
               <i class="material-icons">menu</i>    
-            </a></li>
-
-          </ul>
-
-      <div class="nav-wrapper container">
-       
-          <a  href="#"> <span class="light-blue-text text-lighten-2">SEAGLE</span></a>
-         <ul id="nav-mobile" class="sidenav"></ul>
+          </a>
+        </li>
+       </ul>
+      <div class="nav-wrapper container">       
+          <a class="brand-logo"  >
+            <span id="primero" class="light-blue-text text-lighten-2" > < /S> </span>
+            <span id="segundo" class="light-blue-text text-lighten-2" hidden> SEAGLE</span>
+          </a>         
          <a href="#" id="qwe" class="sidenav-trigger"> <i class="material-icons">menu</i> </a>      
+       </div>
+     </nav>
+</div>
 
-      </div>
-     
-    </nav>
+<!--SIDE NAV SECTION-->
 
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<ul id="slide-out" class="sidenav ">
+   
+    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li></ul>
 
   <!--  FIN DEL MENU -->
 
+
   <!-- INICO CONTENEDOR-->
 
-  <div id="index-banner" class="parallax-container">
+<div id="index-banner" class="valign-wrapper parallax-container">
     <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row">
-          <br>
-          <br>
-          <br>
-          <br>
-        </div>
-        <div class="row"></div>
-        <h1 class="header center white-text text-lighten-2 ">Seagle Desing</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">Serivicios Informaticos</h5>
-        </div>
+      <div class="container center-align">
+        
+          <div class="typewriter fadein"style="display:none;">
+              <strong><h1 class="textsize">BIENVENIDOS</h1></strong>
+              <h2><STRONG>SEAGLE DESIGN</STRONG></h2>
+              <h5>Servicios Informaticos</h5>
+            </div>
 
       </div>
     </div>
@@ -127,7 +83,8 @@
     </div>
   </div>
 
-
+  
+  
   <!--2do Contenedor-->
 
   <div class="container">
@@ -179,64 +136,147 @@
 
 
 
+<div class="grey lighten-4"style="padding:30px">
+  
+<div class="container">   
 
+    <h2 class="light-blue-text text-lighten-2 center-align">SERVICIOS</h2>
+    <br><br>
+
+   <div class="row">
+      <div class="card col s12 m4 l5 panel">
+          <div class="card-image">
+            <img src="imagenes/ecommerce.jpg" height="250">
+            <span class="card-title red-text"style="padding:0px"><strong>Ecommerce</strong></span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+          </div>
+          <div class="card-content">
+            <p>Brindamos las herramientas necesarias para potenciar las ventas por internet</p>
+          </div>
+        </div>
+        <div class="col s12 m4 l1">
+
+        </div>
+
+        <div class="card col s12 m4 l5 panel">
+            <div class="card-image">
+              <img src="imagenes/webdev.jpg" height="250">
+              <span class="card-title red-text"style="padding:0px"><strong>Web development</strong></span>
+              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+            </div>
+            <div class="card-content">
+              <p>Diseñamos sitios web a medida</p>
+            </div>
+          </div>        
+   </div>
+
+   <div class="row">
+      <div class="card col s12 m4 l5 panel">
+          <div class="card-image">
+            <img src="imagenes/softdevelop.png" height="250">
+            <span class="card-title red-text" style="padding:0px"><strong>Software development</strong></span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+          </div>
+          <div class="card-content">
+            <p>Diseñamos software a medida</p>
+          </div>
+        </div>
+        <div class="col s12 m4 l1">
+
+        </div>
+
+        <div class="card col s12 m4 l5 panel">
+            <div class="card-image">
+              <img src="imagenes/mobdevelop.png" height="250">
+              <span class="card-title red-text "style="padding:0px"><strong>Mobile development</strong></span>
+              <a href="#modal1" class="btn-floating halfway-fab waves-effect waves-light red modal-trigger"><i class="material-icons">add</i></a>
+            </div>
+            <div class="card-content">
+              <p>Diseñamos aplicaciones web a medida</p>
+            </div>
+          </div>        
+   </div>
+ </div>
+</div>
 
   <!-- 3er seccionSLIDER-->
 
+  <!-- FIN CONTENEDOR -->
+<div class="container">
+    <h2 class="light-blue-text text-lighten-2 center-align">CONTACTANOS</h2>
+    <br><br>
+<section>
+  <form class="col s12">
+    <div class="row">
+      <div class="col s12 m4 l3 ">
+        <p>Te responderemos a la brevedad</p>
+      </div>
+        <div class="input-field col s12 m4 l5 ">
+            <i class="material-icons prefix">perm_identity</i>
+            <input id="nombre" type="text" class="validate">
+            <label for="nombre">Nombre</label>
+          </div>
+          <div class="input-field col s12 m4  ">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="apellido" type="text" class="validate">
+              <label for="apellido">Apellido</label>
+            </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m4 l3">
+            <p> <i class="small material-icons">add_location</i>
+            Rosario, Argentina</p>
+          </div>
+          <div class="input-field col s12 m4 l9 ">
+              <i class="material-icons prefix">email</i>
+              <input id="email" type="text" class="validate">
+              <label for="email">Email</label>
+            </div>    
 
-  <div class="slider">
-    <ul class="slides">
-      <li>
-        <img src="imagenes/madevelop.png">
-        <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+      </div>
+
+      <div class="row">
+          <div class="col s12 m4 l3">
+              <p> <i class="small material-icons">phone_android</i>
+               (3467)-448863</p>
+               <p> <i class="small material-icons">phone_android</i>
+                (341)-5324611</p>
+            </div>
+            <div class="input-field col s12 m4 l9 ">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea id="Mensaje" class="materialize-textarea" data-length="120"></textarea>
+                <label for="Mensaje">Mensaje</label>
+              </div>    
+  
         </div>
-      </li>
-      <li>
-        <img src="imagenes/2.jpg">
-        <!-- random image -->
-        <div class="caption left-align">
-          <h3>Left Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="imagenes/3.jpg">
-        <!-- random image -->
-        <div class="caption right-align">
-          <h3>Right Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="imagenes/asd.jpg">
-        <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-    </ul>
-  </div>
+  
+  
+        <p class="right-align">
+            <button class="waves-effect waves-light btn" type="submit"><i class="material-icons right">send</i>enviar</button>
+          </p>
+  <br> <br>
+</form>   
+</section>
+</div> 
+
+  
+<!--zona modals-->
 
 
-
-  <div class="container">
-    <div class="section">
-      <div class="row"></div>
-
-
+<div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Mobile development</h4>
+      <p>un poco de descripccion sobre el diseño de moviles</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Aceptar</a>
     </div>
   </div>
 
 
+<!--Fin zona modals-->
 
-
-
-  <!-- FIN CONTENEDOR -->
-
+    
 
 
 
@@ -272,17 +312,15 @@
       </div>
     </div>
   </footer>
-
+  <span class="ir-arriba " title="Arriba">
+      <i class="material-icons">arrow_drop_up</i>
+    </span>
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 
-  <script>
-    $(document).ready(function () {
-      $('.slider').slider();
-    });
-  </script>
+  
 
 
 
@@ -300,6 +338,19 @@
 
 
     });
+
+//script modal//
+    $(document).ready(function(){
+    $('.modal').modal();
+  });
+
+  
+//texto que aparece//
+  $(document).ready(function() {   
+    setTimeout(function() {
+        $(".fadein").fadeIn(1500);
+    },1000);
+});
   </script>
 
 
@@ -313,10 +364,8 @@
 
 
   <!-- boton arriba-->
-  <span class="ir-arriba " title="Arriba">
-    <i class="material-icons">arrow_drop_up</i>
-  </span>
-  </span>
+  
+ 
 
 </body>
 
