@@ -4278,7 +4278,12 @@ nav {
 nav.nav-extended {
   height: auto;
 }
+.nav-wrapper  ul a:hover{
 
+ color: #1ca2e0
+
+
+}
 nav.nav-extended .nav-wrapper {
   min-height: 56px;
   height: auto;
@@ -4413,10 +4418,10 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
   height: inherit;
   line-height: inherit;
 }
-
+/*
 nav ul a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
+  background-color: rgba(157, 10, 255, 0.1);
+}*/
 
 nav ul.left {
   float: left;
@@ -7489,15 +7494,20 @@ input[type=range]::-ms-thumb {
 /***************
     Nav List
 ***************/
+
 .table-of-contents.fixed {
   position: fixed;
 }
-
+/*
 .table-of-contents li {
   padding: 2px 0;
 }
 
+*/
+ /*
 .table-of-contents a {
+  
+ 
   display: inline-block;
   font-weight: 300;
   color: #757575;
@@ -7506,18 +7516,23 @@ input[type=range]::-ms-thumb {
   line-height: 1.5rem;
   letter-spacing: .4;
   display: inline-block;
+ 
 }
-
+ */
+/*
 .table-of-contents a:hover {
   color: #a8a8a8;
   padding-left: 15px;
   border-left: 1px solid #ee6e73;
-}
+}*/
 
 .table-of-contents a.active {
-  font-weight: 500;
+/* font-weight: 500;
   padding-left: 14px;
   border-left: 2px solid #ee6e73;
+   */
+  background-color: #bbdefb;
+
 }
 
 .sidenav {
@@ -8477,10 +8492,19 @@ input[type=range]::-ms-thumb {
   visibility: visible;
   -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
           animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-  -webkit-transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-  transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-  transition: opacity .3s, transform .3s, visibility 0s 1s;
-  transition: opacity .3s, transform .3s, visibility 0s 1s, -webkit-transform .3s;
+  -webkit-transition: opacity .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
 }
 
 .tap-target {
@@ -8533,10 +8557,19 @@ input[type=range]::-ms-thumb {
 
 .tap-target-wave::after {
   visibility: hidden;
-  -webkit-transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-  transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-  transition: opacity .3s, transform .3s, visibility 0s;
-  transition: opacity .3s, transform .3s, visibility 0s, -webkit-transform .3s;
+  -webkit-transition: opacity .3s,
+ visibility 0s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ visibility 0s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s,
+ -webkit-transform .3s;
   z-index: -1;
 }
 
