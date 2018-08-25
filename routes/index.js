@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var path = require('path')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -32,7 +33,7 @@ var nodemailer = require('nodemailer');
   var mailOptions = {
       from: fullname , // sender address
       to: 'lucas_masciotra@hotmail.com', // list of receivers
-      subject: 'Consulta Seagle', // Subject line
+      subject: 'Consulta Seagle'+ fullname, // Subject line
       text: mensaj, // plaintext body
       
   };
@@ -51,12 +52,16 @@ var nodemailer = require('nodemailer');
 
   
 
+  var filePath = "./public/gracias.html"
+  var resolvedPath = path.resolve(filePath);
+  console.log(resolvedPath);
+ 
 
 
 
+  res.sendFile(resolvedPath)
 
-res.send('respond with a resource');
-});
+}); 
 
 
 
