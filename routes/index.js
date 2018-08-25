@@ -49,13 +49,13 @@ var nodemailer = require('nodemailer');
 
 
 
-  
+  var filePath = "./public/gracias.html"
+  var resolvedPath = path.resolve(filePath);
+  //console.log(resolvedPath);
+  res.sendFile(resolvedPath)
 
 
 
-
-
-res.send('respond with a resource');
 });
 
 
