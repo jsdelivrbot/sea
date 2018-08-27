@@ -1,14 +1,9 @@
 @media only screen and (min-width : 600px) {
 
-.textsize{
 
-   
-
-    font-size: 90px;
-}
 
 /* Efecto typewriter */
-.typewriter h2 , .typewriter h5 {
+.typewriter h1 , .typewriter h5 , .typewriter h2 {
     
     overflow: hidden; /* Ensures the content is not revealed until the animation */
   /*  border-right: .15em solid orange; /* The typwriter cursor */
