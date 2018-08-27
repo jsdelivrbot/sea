@@ -105,37 +105,34 @@
       <div class="row slideanim">
         <div class="col s12 m4 icons">
           <div class="icon-block">
-            <h2 class="center ">
+            <h2 class="center cyan-text ">
               <i class="material-icons">flash_on</i>
             </h2>
-            <h5 class="center">Rapidez</h5>
+            <h5 class="center cyan-text ">Rapidez</h5>
 
-            <p class="light">El tiempo </p>
+            <p class="light">Garantizamos que los proyectos se realizaran en tiempo y forma, acorde a las exigencias del mismo</p>
           </div>
         </div>
 
         <div class="col s12 m4 icons">
           <div class="icon-block">
-            <h2 class="center brown-text">
+            <h2 class="center cyan-text">
               <i class="material-icons">group</i>
             </h2>
-            <h5 class="center">User Experience Focused</h5>
+            <h5 class="center cyan-text">Comunidad</h5>
 
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates
-              components and animations that provide more feedback to users. Additionally, a single underlying responsive
-              system across all platforms allow for a more unified user experience.</p>
+            <p class="light">En Seagle somos todos uno. Hacemos los proyectos como si fuera nuestros</p>
           </div>
         </div>
 
         <div class="col s12 m4 icons">
           <div class="icon-block">
-            <h2 class="center brown-text">
+            <h2 class="center cyan-text">
               <i class="material-icons">settings</i>
             </h2>
-            <h5 class="center">Easy to work with</h5>
+            <h5 class="center cyan-text">herramientas</h5>
 
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are
-              also always open to feedback and can answer any questions a user may have about Materialize.</p>
+            <p class="light">Usamos las ultimas tecnologias disponibles segun el tipo de proyecto que se lleve a cabo.</p>
           </div>
         </div>
       </div>
@@ -160,7 +157,7 @@
           <div class="card-image">
             <img src="imagenes/ecommerce.jpg" height="250">
             <span class="card-title red-text"style="padding:0px"><strong>Ecommerce</strong></span>
-            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+            <a href="#modal_ecommerce"class="btn-floating halfway-fab waves-effect waves-light red modal-trigger"><i class="material-icons">add</i></a>
           </div>
           <div class="card-content">
             <p>Brindamos las herramientas necesarias para potenciar las ventas por internet</p>
@@ -174,7 +171,7 @@
             <div class="card-image">
               <img src="imagenes/webdev.jpg" height="250">
               <span class="card-title red-text"style="padding:0px"><strong>Web development</strong></span>
-              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+              <a href="#modal_web"class="btn-floating halfway-fab waves-effect waves-light red modal-trigger"><i class="material-icons">add</i></a>
             </div>
             <div class="card-content">
               <p>Diseñamos sitios web a medida</p>
@@ -187,7 +184,7 @@
           <div class="card-image">
             <img src="imagenes/softdevelop.png" height="250">
             <span class="card-title red-text" style="padding:0px"><strong>Software development</strong></span>
-            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+            <a href="#modal_soft"class="btn-floating halfway-fab waves-effect waves-light red modal-trigger"><i class="material-icons">add</i></a>
           </div>
           <div class="card-content">
             <p>Diseñamos software a medida</p>
@@ -201,7 +198,7 @@
             <div class="card-image">
               <img src="imagenes/mobdevelop.png" height="250">
               <span class="card-title red-text "style="padding:0px"><strong>Mobile development</strong></span>
-              <a href="#modal1" class="btn-floating halfway-fab waves-effect waves-light red modal-trigger"><i class="material-icons">add</i></a>
+              <a href="#modal_mob" class="btn-floating halfway-fab waves-effect waves-light red modal-trigger"><i class="material-icons">add</i></a>
             </div>
             <div class="card-content">
               <p>Diseñamos aplicaciones web a medida</p>
@@ -211,9 +208,67 @@
  </div>
 </div>
 </div>
-  <!-- 3er seccionSLIDER-->
 
-  <!-- FIN CONTENEDOR -->
+<!--ZONA DE MODALS-->
+<div id="modal_ecommerce" class="modal">
+  <div class="modal-content">
+    <h4>Ecommerce</h4>
+    <p>Brindamos las herramientas que tu negocio pueda realizar ventas a traves de internet. 
+      De esta forma tu negocio podrá realizar ventas a todo el territorio argentino.
+    </p>
+    <p>Herramientas: </p>
+   <ul>
+     <li>* Sistema de usuarios</li>
+     <li>* Carrito de compras </li>
+     <li>* Panel de administrador</li>
+     <li>* Sistema de pagos integrado</li>
+  </ul>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Aceptar</a>
+  </div>
+</div>
+
+<div id="modal_web" class="modal">
+    <div class="modal-content">
+      <h4>Web development</h4>
+      <p>La presencia en la web es crítica, te garantizamos una web que cumpla con los estándares de
+         usabilidad y accesibilidad para que todo mundo pueda acceder desde cualquier dispositivo</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Aceptar</a>
+    </div>
+  </div>
+
+  <div id="modal_soft" class="modal">
+      <div class="modal-content">
+        <h4>Software development</h4>
+        <p>La mejor opción para digitalizar tus procesos de negocios, stock sueldos, mesa de ayuda, etc.
+          Usamos tecnologias libre y siempre actualizadas.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Aceptar</a>
+      </div>
+    </div>
+
+
+<div id="modal_mob" class="modal">
+  <div class="modal-content">
+    <h4>Mobile development</h4>
+    <p>Realizamos aplicaciones web a medida, ya sea para tu negocio u otro fin alguno.
+      Usamos tecnologias libres y siempre actualizadas.
+      La aplicacion puede estar en la playstore o no, segun conveniencia del cliente.
+    </p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Aceptar</a>
+  </div>
+</div>
+<!--FIN ZONA DE MODALS-->
+
+
+<!-- SECCION CONTACTO -->
   <div id="contacto" class="section scrollspy">
 <div class="container">
     <h2 class="light-blue-text text-lighten-2 center-align">CONTACTO</h2>
@@ -281,29 +336,10 @@
 </section>
 </div> 
 </div>
-  
-<!--zona modals-->
+ 
+<!-- FIN SECCION CONTACTO -->
 
-
-<div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Mobile development</h4>
-      <p>un poco de descripccion sobre el diseño de moviles</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Aceptar</a>
-    </div>
-  </div>
-
-
-<!--Fin zona modals-->
-
-    
-
-
-
-
-  <!-- FOOTER-->
+<!-- FOOTER-->
 
   <footer class="page-footer grey darken-4">
     <div class="container">
@@ -334,6 +370,8 @@
       </div>
     </div>
   </footer>
+
+ <!--FIN FOOTER--> 
   <span class="ir-arriba " title="Arriba">
       <i class="material-icons">arrow_drop_up</i>
     </span>
@@ -341,10 +379,6 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
-  
-
-
 
   <script>
 //script sidenav//    
@@ -372,8 +406,7 @@
 //scroll spy//
 $(document).ready(function(){
     $('.scrollspy').scrollSpy();
-  });
-     
+  });     
   </script>
 
   <!-- /Scripts-->
